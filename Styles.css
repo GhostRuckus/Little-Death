@@ -1,0 +1,233 @@
+/* CSS RESET
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* End CSS Reset */
+
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(38,1,38);
+}
+
+a { color: inherit; } 
+
+.LDButton {
+    
+    display: block;
+    color: #F2EEB3;
+    background-color: #59323C;
+    background-color: rgba(89,50,60,1); 
+    
+    /* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+   /* text-shadow: 1vw 1vw 1vw #260126;
+    box-shadow: 1vw 1vw 1vw #260126; */
+
+    font-size: 3vw;
+    text-align: center;
+ 
+    height: 25%;
+    width: 25%;
+    position: absolute; 
+    
+    /* To Center Vertically and Horizontally */
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    /* For Hover Transition */
+    -webkit-transition-property: background-color;
+       -moz-transition-property: background-color;
+         -o-transition-property: background-color;
+            transition-property: background-color;
+    -webkit-transition-duration: 2s; 
+       -moz-transition-duration: 2s; 
+         -o-transition-duration: 2s; 
+            transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.LDButton:hover, .LDButton:focus {
+    
+    background-color: #8C6954;
+    background-color: rgba(140,105,84,1);
+    
+}
+
+.Content {
+    
+    display: block;
+    color: #F2EEB3;
+    color: rgba(242,238,179,0);
+    background-color: #BFAF80;
+    background-color: rgba(191,175,128,0.5);
+   
+    /* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    position: absolute;
+    font-size: 3vw;
+    text-align: center;
+    width: 35%;
+    height: 35%;
+    z-index: -1;
+    
+  /*  box-shadow: 1vw 1vw 1vw #260126;  */
+    
+     /* For Hover Transition */
+    -webkit-transition-property: background-color, color;
+       -moz-transition-property: background-color, color;
+         -o-transition-property: background-color, color;
+            transition-property: background-color, color;
+    -webkit-transition-duration: 2s; 
+       -moz-transition-duration: 2s; 
+         -o-transition-duration: 2s; 
+            transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    
+    
+}
+
+.Content:hover, .Content:focus {
+    
+    background-color: #59323C;
+    background-color: rgba(89,50,60,0.5);
+    color: #F2EEB3;
+    color: rgb(242,238,179)
+}
+
+.Content-TL {
+    
+/* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    
+}
+.Content-TR {
+    
+    
+/* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+}
+.Content-BL {
+    
+   /* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+   
+    
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    
+    
+}
+.Content-BR {
+    
+   /* To use subtractive border box design */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    
+}
+
+.VHC {
+    
+    /* To Center Vertically and Horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+   /* text-shadow: 1vw 1vw 1vw #260126; */
+    
+}
+
+.Content-Hidden {
+    
+    background-color: #59323C;
+    background-color: rgba(89,50,60,0.5);
+    color: #F2EEB3;
+    color: rgb(242,238,179);
+    
+}
